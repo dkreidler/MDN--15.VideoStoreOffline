@@ -141,9 +141,7 @@ window.onload = function() {
 
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker
-            .register('/learning-area/javascript/apis/client-side-storage/cache-sw/video-store-offline/sw.js')
+            .register('sw.js')
             .then(function() { console.log('Service Worker Registered'); });
     }
-
-
 };
